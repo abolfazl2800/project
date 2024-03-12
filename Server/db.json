@@ -1,0 +1,10 @@
+{
+    "questions": [
+      { "id": 1, "title": "what is react?" },
+      { "id": 2, "title": "how to use redux in react?" }
+    ],
+    "answers": [
+      { "id": 1, "body": "react a freamwork a js", "answerId": 1 },
+      { "id": 2, "body": "enter this command: *npm i redux react-redux", "answerId": 2 }
+    ]
+}

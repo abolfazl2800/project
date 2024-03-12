@@ -1,0 +1,21 @@
+@import url(assets/Fonts/Fonts.css);
+html * {
+  font-family: "IRANSansXFaNum";
+  margin: 0;
+}
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  font-synthesis: none;
+  background-color: rgb(238, 238, 238);
+  height: 100vh;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input , select , button{
+  font-size: inherit;
+  font-family: inherit;
+}
