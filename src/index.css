@@ -2,6 +2,7 @@
 html * {
   font-family: "IRANSansXFaNum";
   margin: 0;
+  direction: rtl;
 }
 :root {
   line-height: 1.5;
@@ -17,5 +18,5 @@ html * {
 
 input , select , button{
   font-size: inherit;
-  font-family: inherit;
+  font-family: inherit !important;
 }

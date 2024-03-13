@@ -4,8 +4,9 @@ export const StyledHome = styled.div`
   display: flex;
   height: 100vh;
   .main {
-    width: ${(props) => (props.isShow ? "80vw" : "100vw")};
+    width: "80vw";
     transition: 0.3s;
+    float: right;
     position: relative;
     .show-button {
       padding: 5px;
@@ -23,12 +24,12 @@ export const StyledHome = styled.div`
     }
   }
   .sidebar {
-    width: ${(props) => (props.isShow ? "20vw" : 0)};
-    transition: 0.3s;
-    background-color: #d8d8d8;
-    height: 100vh;
-    position: absolute;
-    right: 0px;
-    top: 0;
+    width: 401px;
+    flex-shrink: 0;
+    background: #d8d8d8;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    padding: 36px 18px;
   }
 `;
