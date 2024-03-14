@@ -9,7 +9,6 @@ export const StyledUserBox = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 10px auto;
   .image {
     width: 48px;
     height: 48px;

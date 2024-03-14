@@ -3,13 +3,13 @@ import { styled } from "styled-components";
 export const StyledHistory = styled.div`
   width: 80%;
   max-width: 90%;
-  height: 528px;
+  height: 460px;
   max-height: 528px;
   flex-shrink: 0;
   border-radius: 25px;
   background: #fff;
-  margin: 10px auto;
-  padding: 32px 20px;
+  padding: 16px 20px;
+  position: relative;
   .header {
     display: flex;
     align-items: center;
@@ -30,11 +30,10 @@ export const StyledHistory = styled.div`
   }
   .filters {
     width: 100%;
-    margin: 30px 0;
     gap: 10px;
     display: flex;
     align-items: center;
-    margin: 30px 0;
+    margin: 23px 0;
     .filter-icon {
       width: 26px;
       height: 26px;
@@ -90,6 +89,34 @@ export const StyledHistory = styled.div`
           }
         }
       }
+    }
+  }
+  .new-chat {
+    width: 100%;
+    height: 75px;
+    flex-shrink: 0;
+    border-radius: 0px 0px 25px 25px;
+    background: #0074df;
+    position: absolute;
+    right: 0px;
+    top: 418px;
+    text-align: center;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    color: #fff;
+    text-align: right;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+    svg {
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
     }
   }
 `;

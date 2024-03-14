@@ -3,7 +3,6 @@ import { styled } from "styled-components";
 export const StyledSerachBox = styled.div`
   width: 90%;
   height: 60px;
-  margin: 10px auto;
   flex-shrink: 0;
   border-radius: 50px;
   font-family: inherit;

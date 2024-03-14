@@ -1,6 +1,12 @@
 import { StyledHistory } from "./style";
-import { MoreOutlined, FilterOutlined, CloseOutlined } from "@ant-design/icons";
+import {
+  MoreOutlined,
+  FilterOutlined,
+  CloseOutlined,
+  PlusOutlined,
+} from "@ant-design/icons";
 import { Tag } from "antd";
+import QuestionBox from "../QuestionBox";
 
 const HistoryBox = () => {
   return (
@@ -25,6 +31,14 @@ const HistoryBox = () => {
             1 هفته گذشته
           </Tag>
         </div>
+      </div>
+      <QuestionBox />
+      <QuestionBox />
+      <QuestionBox />
+      <QuestionBox />
+      <div className="new-chat">
+        <PlusOutlined />
+        گفتگوی جدید
       </div>
     </StyledHistory>
   );
