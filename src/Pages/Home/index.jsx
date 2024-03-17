@@ -9,9 +9,7 @@ import MessageBox from "../../Component/MessageBox";
 import ChattBox from "../../Component/ChatBox";
 
 const Home = () => {
-  const [messages, setMessages] = useState([
-    { text: "سلام، چطور می‌توانم به شما کمک کنم؟", isBot: true },
-  ]);
+  const [messages, setMessages] = useState([]);
   const [inputText, setInputText] = useState("");
 
   function generateRandomText(wordsCount) {
@@ -105,11 +103,13 @@ const Home = () => {
   };
 
   useEffect(() => {
-    const lastMessage = messages.length - 1;
-    if (!messages[lastMessage].isBot) {
-      const RandomText = generateRandomText(200);
-      const newBotMessage = { text: RandomText, isBot: true };
-      setMessages([...messages, newBotMessage]);
+    if (messages.length > 0) {
+      const lastMessage = messages.length - 1;
+      if (!messages[lastMessage].isBot) {
+        const RandomText = generateRandomText(200);
+        const newBotMessage = { text: RandomText, isBot: true };
+        setMessages([...messages, newBotMessage]);
+      }
     }
   }, [messages]);
 

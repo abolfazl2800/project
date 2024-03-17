@@ -1,16 +1,18 @@
-import { StyledChatBox } from "./style";
+import { StyledChatBox, StyledMessage } from "./style";
 
-const ChattBox = ({messages}) => {
+const ChattBox = ({ messages }) => {
+  console.log(messages);
+
   return (
     <StyledChatBox>
       <div className="chat-history">
         {messages?.map((message, index) => (
-          <div
-            key={index}
-            className={message.isBot ? "bot-message" : "user-message"}
-          >
-            {message.text}
-          </div>
+          <StyledMessage key={index} className={"message"} isBot={message.isBot}>
+            <div className="profile">
+              <img src="/user-image.png" alt="" />
+            </div>
+            <div className="text">{message.text}</div>
+          </StyledMessage>
         ))}
       </div>
     </StyledChatBox>

@@ -8,6 +8,7 @@ export const StyledMessageBox = styled.div`
   margin: auto;
   right: 4vw;
   .ant-input-affix-wrapper {
+    z-index: 10000;
     padding: 0;
     border-radius: 15px;
     .ant-input {
